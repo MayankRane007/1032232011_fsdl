@@ -1,164 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <title>Mayank Rane | Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Mayank Rane | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fsd.css">
 </head>
 <body>
+    <!-- Parallax Background (for your JS) -->
+    <div class="bg-animation"></div>
 
-<!-- NAVBAR -->
-<nav class="navbar">
-  <h2>Mayank.</h2>
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <h2>Mayank.</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-<!-- HERO SECTION -->
-<section class="hero" id="home">
-  <div class="hero-text">
-    <h1>Hi, I'm <span>Mayank Rane</span></h1>
-    <h3>Aspiring Software Engineer</h3>
-    <p>
-      Computer Science undergraduate with strong foundations in C++, Python,
-      Embedded Systems, and Web Development. Passionate about building practical
-      and efficient real-world solutions.
-    </p>
-    <div class="buttons">
-      <a href="#contact" class="btn primary">Hire Me</a>
-      <a href="#projects" class="btn secondary">View Projects</a>
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h1>Hi, I'm <span>Mayank Rane</span></h1>
+            <h3>Aspiring Software Engineer</h3>
+            <p>
+                Computer Science undergraduate with strong foundations in C++, Python,
+                Embedded Systems, and Web Development. Passionate about building practical
+                and efficient real-world solutions.
+            </p>
+            <div class="buttons">
+                <a href="#contact" class="btn primary">Hire Me</a>
+                <a href="#projects" class="btn secondary project-link">View Projects</a>
+            </div>
+        </div>
+
+        <div class="hero-img">
+            <img src="profile.jpg" alt="Mayank Rane" id="profile-photo">
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="grid">
+            <div class="card">C++</div>
+            <div class="card">Python</div>
+            <div class="card">HTML & CSS</div>
+            <div class="card">Java (Basics)</div>
+            <div class="card">Arduino</div>
+            <div class="card">Git</div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project">
+                <h3>Automated Crop Planter</h3>
+                <p>
+                    Designed an Arduino-based automated crop planting system using C++.
+                    Integrated motor control and soil sensing to optimize seed placement
+                    and reduce manual effort by approximately 30%.
+                </p>
+                <a href="#" class="project-link btn primary">View Details</a>
+            </div>
+
+            <div class="project">
+                <h3>Solar Powered Vehicle</h3>
+                <p>
+                    Developed a miniature solar-powered vehicle with optimized circuit
+                    efficiency. Achieved a 25% improvement in travel distance under
+                    limited sunlight conditions.
+                </p>
+                <a href="#" class="project-link btn secondary">View Details</a>
+            </div>
+
+            <div class="project">
+                <h3>Auto Cleaning Machine for Houses</h3>
+                <p>
+                    Built an automated house-cleaning machine using microcontrollers and
+                    motors. The system autonomously navigates rooms, detects obstacles,
+                    and performs surface cleaning, reducing human effort and time.
+                </p>
+                <a href="#" class="project-link btn primary">View Details</a>
+            </div>
+
+            <div class="project">
+                <h3>Traffic Prediction System</h3>
+                <p>
+                    Developed a traffic prediction system using Python and basic machine
+                    learning techniques. The model analyzes historical traffic data to
+                    predict congestion levels, helping in better route planning and
+                    traffic management.
+                </p>
+                <a href="#" class="project-link btn secondary">View Details</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-card">
+            <p>📍 Pune, Maharashtra</p>
+            <p>📞 7721013640</p>
+            <p>✉️ mayankrane2005@gmail.com</p>
+            <a href="mailto:mayankrane2005@gmail.com" class="btn primary">Email Me</a>
+        </div>
+    </section>
+
+    <!-- Project Submission Modal (for your JS) -->
+    <div id="formModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Submit Project Idea</h2>
+            <form id="validationForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <small></small>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <small></small>
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+                <small></small>
+                <input type="password" id="password" placeholder="Password" required>
+                <small></small>
+                <button type="submit">Submit Project</button>
+            </form>
+        </div>
     </div>
-  </div>
 
-  <div class="hero-img">
-    <img src="profile.jpg" alt="Mayank Rane">
-  </div>
-</section>
+    <footer>
+        © 2026 Mayank Rane | Portfolio
+    </footer>
 
-<!-- SKILLS -->
-<section id="skills">
-  <h2>Technical Skills</h2>
-  <div class="grid">
-    <div class="card">C++</div>
-    <div class="card">Python</div>
-    <div class="card">HTML & CSS</div>
-    <div class="card">Java (Basics)</div>
-    <div class="card">Arduino</div>
-    <div class="card">Git</div>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects">
-  <h2>Projects</h2>
-
-  <div class="projects-grid">
-    <div class="project">
-      <h3>Automated Crop Planter</h3>
-      <p>
-        Designed an Arduino-based automated crop planting system using C++.
-        Integrated motor control and soil sensing to optimize seed placement
-        and reduce manual effort by approximately 30%.
-      </p>
-    </div>
-
-    <div class="project">
-      <h3>Solar Powered Vehicle</h3>
-      <p>
-        Developed a miniature solar-powered vehicle with optimized circuit
-        efficiency. Achieved a 25% improvement in travel distance under
-        limited sunlight conditions.
-      </p>
-    </div>
-
-    <div class="project">
-      <h3>Auto Cleaning Machine for Houses</h3>
-      <p>
-        Built an automated house-cleaning machine using microcontrollers and
-        motors. The system autonomously navigates rooms, detects obstacles,
-        and performs surface cleaning, reducing human effort and time.
-      </p>
-    </div>
-
-    <div class="project">
-      <h3>Traffic Prediction System</h3>
-      <p>
-        Developed a traffic prediction system using Python and basic machine
-        learning techniques. The model analyzes historical traffic data to
-        predict congestion levels, helping in better route planning and
-        traffic management.
-      </p>
-    </div>
-  </div>
-  <div class="project" id="formProject">
-  <h3>Form Validation</h3>
-  <p>
-    Implemented client-side form validation using JavaScript and Regular
-    Expressions. Validates user inputs such as name, email, phone number,
-    and password in real-time to ensure accuracy and security.
-  </p>
-</div>
-
-</section>
-<!-- FORM MODAL -->
-<div class="modal" id="formModal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <h2>Form Validation</h2>
-
-    <form id="validationForm">
-      <input type="text" id="name" placeholder="Full Name">
-      <small></small>
-
-      <input type="email" id="email" placeholder="Email">
-      <small></small>
-
-      <input type="text" id="phone" placeholder="Phone Number">
-      <small></small>
-
-      <input type="password" id="password" placeholder="Password">
-    
-      <small></small>
-      <input type="password" id="confirmPassword" placeholder="Confirm Password">
-  <small></small>
-
-  
-  <div class="captcha-box">
-    <span id="captchaText"></span>
-    <button type="button" id="refreshCaptcha">↻</button>
-  </div>
-
-  <input type="text" id="captchaInput" placeholder="Enter CAPTCHA">
-  <small></small>
-
-  <button type="submit" class="btn primary">Submit</button>
-
-      
-    </form>
-  </div>
-</div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-  <h2>Contact</h2>
-  <div class="contact-card">
-    <p>📍 Pune, Maharashtra</p>
-    <p>📞 7721013640</p>
-    <p>✉️ mayankrane2005@gmail.com</p>
-  </div>
-</section>
-
-<footer>
-  © 2026 Mayank Rane | Portfolio
-</footer>
-<link rel="stylesheet" href="1032232011.css">
+    <!-- Load your JS last -->
+    <script src="script.js"></script>
 </body>
-
 </html>
